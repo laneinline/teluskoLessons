@@ -10,12 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 public class SqrServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException  {
 		
-		//int k = (int) req.getAttribute("k");
+		int k = Integer.parseInt(req.getParameter("k")) ;
 		
-		//k*=k;
+		k*=k;
 
-		//PrintWriter out = res.getWriter();
-		//out.println("Resalt of adding and then sum^2 is: " + k);
+		PrintWriter out = res.getWriter();
+		out.println("Resalt of adding and then sum^2 is: " + k);
+		
 		System.out.println("SqrServlet was called.");
 	}
 }
