@@ -13,7 +13,7 @@ public class SqrServlet extends HttpServlet {
 		int k = (int) req.getAttribute("k");
 		
 		k*=k;
-		
+		//test for send redirect brunch
 		PrintWriter out = res.getWriter();
 		out.println("Resalt of adding and then sum^2 is: " + k);
 	}
