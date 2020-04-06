@@ -22,9 +22,11 @@ public class AddServlet extends HttpServlet{
 		//PrintWriter out = res.getWriter();
 		//out.println("Result is: " + k);
 		
-		req.setAttribute("k", k);
+		res.sendRedirect("sqr");
 		
-		RequestDispatcher rd = req.getRequestDispatcher("sqr");
-		rd.forward(req, res);
+		//req.setAttribute("k", k);
+		
+		//RequestDispatcher rd = req.getRequestDispatcher("sqr");
+		//rd.forward(req, res);
 	}
 }
