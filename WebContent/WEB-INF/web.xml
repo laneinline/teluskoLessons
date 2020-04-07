@@ -8,22 +8,5 @@
     <welcome-file>firstTomcat</welcome-file>
   </welcome-file-list>
   
-  <servlet>
-  	<servlet-name>addServlet</servlet-name>
-  	<servlet-class>site.laneinline.AddServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>addServlet</servlet-name>
-  	<url-pattern>/add</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  	<servlet-name>sqrServlet</servlet-name>
-  	<servlet-class>site.laneinline.SqrServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>sqrServlet</servlet-name>
-  	<url-pattern>/sqr</url-pattern>
-  </servlet-mapping>
-  
+
 </web-app>
