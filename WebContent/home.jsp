@@ -1,5 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" import="java.sql.Statement"%>
+
+<%@include file="header.jsp"  %>
+<%-- <%@taglib uri="uri" prefix="fx" %> --%>
+
+
+<!-- 
+Scriptlet 
+Directive @
+Declaration ! 
+Expression = -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +19,12 @@
 </head>
 <body>
 	<%!
-		%>
+	int coef = 3;	%>
 
 	<%
-	out.print("test_home.jsp");
+	out.print("Hello from home.jsp file");
 	%>
+	<br>
+	My Favorite Number is : <%= coef %>
 </body>
 </html>
