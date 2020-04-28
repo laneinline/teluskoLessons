@@ -26,5 +26,12 @@ Expression = -->
 	%>
 	<br>
 	My Favorite Number is : <%= coef %>
+	<%	
+	try{
+		int m =9/0;
+		}catch(Exception e ){
+			out.println("Error " + e.getMessage());
+		}
+%>
 </body>
 </html>
